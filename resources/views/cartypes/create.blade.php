@@ -20,7 +20,7 @@
                 </div>
             </div>
             <div class="col-lg-12 col-sm-12">
-                {{Form::label('note', 'নোট')}}&nbsp;
+                {{Form::label('note', 'নোট/বিবরন')}}&nbsp;
                 <div class="input-group mb-3">
                     {{Form::textarea('note', null, array('class' => 'form-control', 'required'  ))}}
                     @error('note')

@@ -41,6 +41,7 @@ Route::get('/wastes/create', function () {
 });
 
 
+
 Route::get('/waste_types', function () {
     return view('wastetypes.index');
 });
@@ -57,6 +58,16 @@ Route::get('/drivers', function () {
 });
 Route::get('/drivers/create', function () {
     return view('drivers.create');
+});
+
+
+
+
+Route::get('/trips', function () {
+    return view('trips.index');
+});
+Route::get('/trips/create', function () {
+    return view('trips.create');
 });
 
 

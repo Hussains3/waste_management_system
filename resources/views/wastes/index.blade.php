@@ -17,7 +17,7 @@
             <th>নিট পরিমান</th>
             <th>পরিশোধনযোগ্য</th>
             <th>অপরিশোধনযোগ্য</th>
-            <th>অ্যাকশন</th>
+            <th class="text-center">অ্যাকশন</th>
         </tr> 
     </thead>
     <tbody>
@@ -27,7 +27,10 @@
             <td>San Francisco</td>
             <td>56</td>
             <td>2012/06/01</td>
-            <td>$115,000</td>
+            <td class="text-center">
+                <button type="button" class="btn btn-primary btn-sm">Edit</button>
+                <button type="button" class="btn btn-danger btn-sm">Delete</button>
+            </td>
         </tr>
     </tbody>
     <tfoot>
@@ -37,7 +40,7 @@
             <th>নিট পরিমান</th>
             <th>পরিশোধনযোগ্য</th>
             <th>অপরিশোধনযোগ্য</th>
-            <th>অ্যাকশন</th>
+            <th class="text-center">অ্যাকশন</th>
         </tr> 
     </tfoot>
 </table>

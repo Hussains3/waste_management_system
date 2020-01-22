@@ -13,7 +13,7 @@
                 {{Form::label('car_type_id', 'গাড়ির ধরন')}}&nbsp;
                 <div class="input-group mb-3">
                     {{Form::select('car_type_id', array( '1'=> 'ট্রাক', '2' => 'ট্রলী', '3'=>'বক্স'), 'ট্রাক',array('class' => 'form-control', 'required'  ))}}&nbsp;
-                    <a href="#" class="btn btn-primary"> +</a>
+                    <a href="/car_types/create" class="btn btn-primary"> +</a>
 
                     @error('car_type_id')
                     <span class="text-danger">{{ $message }}</span>

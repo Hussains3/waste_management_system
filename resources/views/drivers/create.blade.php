@@ -4,7 +4,7 @@
 
 
 @section('content')
-    <h2 class="text-center mb-5">ট্রিপ</h2>
+    <h2 class="text-center mb-5">চালক যুক্ত করুন</h2>
 
     <form action="">
         @csrf

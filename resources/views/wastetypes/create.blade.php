@@ -24,7 +24,7 @@
         </div>
         <div class="row">
             <div class="col-lg-12 col-sm-12">
-                {{Form::label('waste_bye-date', 'নোট')}}&nbsp;
+                {{Form::label('waste_bye-date', 'নোট/বিবরন')}}&nbsp;
 
                 <div class="input-group mb-3">
                     {{Form::textarea('waste_bye-date', null, array('class' => 'form-control','placeholder' => 'নোট',  'required' ))}}

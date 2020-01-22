@@ -14,8 +14,8 @@
         <tr>
             <th>ক্রমিক</th>
             <th>ধরন</th>
-            <th>নোট</th>
-            <th>অ্যাকশন</th>
+            <th>বিবরন</th>
+            <th class="text-center">অ্যাকশন</th>
         </tr> 
     </thead>
     <tbody>
@@ -69,8 +69,8 @@
         <tr>
             <th>ক্রমিক</th>
             <th>ধরন</th>
-            <th>নোট</th>
-            <th>অ্যাকশন</th>
+            <th>বিবরন</th>
+            <th class="text-center">অ্যাকশন</th>
         </tr> 
     </tfoot>
 </table>
