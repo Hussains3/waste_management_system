@@ -21,6 +21,7 @@ Route::get('/login', function () {
 });
 
 
+
 Route::get('/cars', function () {
     return view('cars.index');
 });
@@ -75,6 +76,12 @@ Route::get('/trips/create', function () {
     return view('trips.create');
 });
 
+
+
+
+Route::get('/reports/car', function () {
+    return view('reports.car');
+});
 
 
 
