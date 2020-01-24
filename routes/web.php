@@ -79,6 +79,9 @@ Route::get('/trips/create', function () {
 
 
 
+Route::get('/reports/daily', function () {
+    return view('reports.daily');
+});
 Route::get('/reports/cars', function () {
     return view('reports.cars');
 });

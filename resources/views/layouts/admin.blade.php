@@ -73,8 +73,11 @@
                 </ul>
             </li>
             <li>
-                <a href="#productTypesSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">রিপোর্টসমূহ</a>
+                <a href="#productTypesSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">প্রতিবেদন</a>
                 <ul class="collapse list-unstyled" id="productTypesSubmenu">
+                    <li>
+                        <a href="/reports/daily">দৈনিক</a>
+                    </li>
                     <li>
                         <a href="/reports/cars">গাড়ি</a>
                     </li>
