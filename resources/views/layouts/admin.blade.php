@@ -14,7 +14,13 @@
     <link href="{{ asset('css/admin.css') }}" rel="stylesheet">
     <link href="{{ asset('css/style.css') }}" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.10/css/select2.min.css" rel="stylesheet" />
+
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/bs4/jszip-2.5.0/dt-1.10.20/b-1.6.1/b-flash-1.6.1/b-html5-1.6.1/b-print-1.6.1/datatables.min.css"/>
+
+    {{-- datatable css --}}
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.20/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/rowreorder/1.2.6/css/rowReorder.dataTables.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/responsive/2.2.3/css/responsive.dataTables.min.css">
 
     <!--Bootstrap date picker css-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.css">
@@ -67,7 +73,16 @@
                 <a href="#productTypesSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">রিপোর্টসমূহ</a>
                 <ul class="collapse list-unstyled" id="productTypesSubmenu">
                     <li>
-                        <a href="/reports/car">গাড়ি</a>
+                        <a href="/reports/cars">গাড়ি</a>
+                    </li>
+                    <li>
+                        <a href="/reports/wastes">বর্জ্য</a>
+                    </li>
+                    <li>
+                        <a href="/reports/drivers">চালক</a>
+                    </li>
+                    <li>
+                        <a href="/reports/trips">ট্রিপ</a>
                     </li>
                 </ul>
             </li>
@@ -154,6 +169,12 @@
 <!-- jQuery CDN - Slim version (=without AJAX) -->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 
+{{-- Data table  --}}
+<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+<script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
+<script src="https://cdn.datatables.net/rowreorder/1.2.6/js/dataTables.rowReorder.min.js"></script>
+<script src="https://cdn.datatables.net/responsive/2.2.3/js/dataTables.responsive.min.js"></script>
+
 {{--bootstrap JS--}}
 <script src="{{ asset('js/admin.js') }}" ></script>
 <!-- jQuery Custom Scroller CDN -->
@@ -161,12 +182,16 @@
 
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.36/pdfmake.min.js"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.36/vfs_fonts.js"></script>
+
 <script type="text/javascript" src="https://cdn.datatables.net/v/bs4/jszip-2.5.0/dt-1.10.20/b-1.6.1/b-flash-1.6.1/b-html5-1.6.1/b-print-1.6.1/datatables.min.js"></script>
 
-
+{{-- bootstrap date picker --}}
 <script type="text/javascript"   src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.js"></script>
 
 
+
+
+<script src="https://cdn.jsdelivr.net/npm/select2@4.0.12/dist/js/select2.min.js"></script>
 
     <script type="text/javascript">
     $(document).ready(function () {
@@ -182,7 +207,7 @@
     });
 </script>
 
-<script src="https://cdn.jsdelivr.net/npm/select2@4.0.12/dist/js/select2.min.js"></script>
+
 
     <script>
 

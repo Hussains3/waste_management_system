@@ -6,3 +6,8 @@
     border-top: 2px solid
     #636f83 !important;
 }
+
+
+.card-button:hover{
+    transform: scale(1.02);
+}

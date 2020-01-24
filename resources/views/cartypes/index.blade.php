@@ -2,10 +2,10 @@
 
 @section('content')
 <div class="row mb-2">
-    <div class="col-lg-9 col-sm-12 text-center">
+    <div class="col-lg-12 col-sm-12 text-center">
         <h2 class="">গাড়ির ধরন সমূহ</h2>
     </div>
-    <div class="col-lg-3 col-sm-12 d-flex justify-content-end">
+    <div class="col-lg-12 col-sm-12 d-flex justify-content-end">
         <a href="/car_types/create"><button class=" btn btn-primary form-control "><i class="fas fa-plus"></i> Add New</button></a>
     </div>
 </div>
@@ -66,9 +66,14 @@
 
 @section('scripts')
     <script>
-        $(document).ready(function() {
-            $('#example').DataTable();
-        } );
+         $(document).ready(function() {
+    var table = $('#example').DataTable( {
+        rowReorder: {
+            selector: 'td:nth-child(2)'
+        },
+        responsive: true
+    } );
+} );
 
     </script>
 

@@ -1,15 +1,24 @@
 @extends('layouts.admin')
 
-@section('content')
-<div class="row mb-2">
-    <div class="col-lg-12 col-sm-12 text-center">
-        <h2 class="">গাড়ি সমূহ</h2>
-    </div>
-    <div class="col-lg-12 col-sm-12 d-flex justify-content-end">
-        <a href="/cars/create"><button class=" btn btn-primary form-control "><i class="fas fa-plus"></i> Add New</button></a>
-    </div>
-</div>
 
+
+
+@section('content')
+<h2 class="text-center">গাড়ির রিপোর্ট</h2>
+
+<div class="row">
+<form action="" class="form-inline mb-2 ml-3 input-daterange">
+    @csrf
+    <div class="form-group mb-2">
+    {{Form::text('start_date', null, array('class' => 'form-control','id' =>'start_date','required'  ))}}
+    </div>
+    <div class="form-group mx-sm-3 mb-2">
+    {{Form::text('end_date', null, array('class' => 'form-control','id' =>'end_date','required'  ))}}
+    </div>
+    {{Form::submit('Search',['class' => 'btn btn-primary mb-2','id' =>'search'])}}
+{{ Form::close() }}
+  
+</div>
 
 <table id="example" class="table table-striped table-bordered " style="width:100%">
     <thead>
@@ -20,7 +29,6 @@
             <th>চালক</th>
             <th>ক্রয়ের তারিখ</th>
             <th>ক্রয় মূল্য</th>
-            <th class="text-center">অ্যাকশন</th>
 
         </tr>
     </thead>
@@ -32,10 +40,6 @@
             <td>56</td>
             <td>2012/06/01</td>
             <td>2012/06/01</td>
-            <td class="text-center">
-                <button type="button" class="btn btn-primary btn-sm">Edit</button>
-                <button type="button" class="btn btn-danger btn-sm">Delete</button>
-            </td>
         </tr>
         
     </tbody>
@@ -47,11 +51,21 @@
             <th>চালক</th>
             <th>ক্রয়ের তারিখ</th>
             <th>ক্রয় মূল্য</th>
-            <th class="text-center">অ্যাকশন</th>
         </tr>
     </tfoot>
 </table>
+
 @endsection
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -59,15 +73,19 @@
 @section('scripts')
     <script>
         $(document).ready(function() {
-    var table = $('#example').DataTable( {
-        rowReorder: {
-            selector: 'td:nth-child(2)'
-        },
-        responsive: true
-    } );
-} );
-
+            var table = $('#example').DataTable( {
+                dom: 'Bfrtip',
+                buttons: [
+                    'excelHtml5',
+                    'csvHtml5',
+                    'print'
+                ],
+                rowReorder: {
+                    selector: 'td:nth-child(2)'
+                },
+                responsive: true
+            } );
+        } );
     </script>
-
 @endsection
 

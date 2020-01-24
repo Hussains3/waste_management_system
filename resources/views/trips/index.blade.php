@@ -50,10 +50,14 @@
 
 @section('scripts')
     <script>
-        $(document).ready(function() {
-            $('#example').DataTable();
-        } );
-
+           $(document).ready(function() {
+    var table = $('#example').DataTable( {
+        rowReorder: {
+            selector: 'td:nth-child(2)'
+        },
+        responsive: true
+    } );
+} );
     </script>
 
 @endsection

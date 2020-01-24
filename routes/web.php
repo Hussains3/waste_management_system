@@ -79,8 +79,17 @@ Route::get('/trips/create', function () {
 
 
 
-Route::get('/reports/car', function () {
-    return view('reports.car');
+Route::get('/reports/cars', function () {
+    return view('reports.cars');
+});
+Route::get('/reports/drivers', function () {
+    return view('reports.drivers');
+});
+Route::get('/reports/trips', function () {
+    return view('reports.trips');
+});
+Route::get('/reports/wastes', function () {
+    return view('reports.wastes');
 });
 
 
