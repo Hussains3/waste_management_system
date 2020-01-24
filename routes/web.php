@@ -95,6 +95,13 @@ Route::get('/reports/wastes', function () {
 
 
 
+Route::get('/users', function () {
+    return view('users.index');
+});
+Route::get('/users/create', function () {
+    return view('users.create');
+});
+
 
 Route::get('/support', function () {
     return view('support');

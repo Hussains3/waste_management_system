@@ -3,37 +3,33 @@
 @section('content')
 <div class="row mb-2">
     <div class="col-lg-12 col-sm-12 text-center">
-        <h2 class="">গাড়ি সমূহ</h2>
+        <h2 class="">ব্যাবহারকারীর তালিকা</h2>
     </div>
     <div class="col-lg-12 col-sm-12 d-flex justify-content-end">
-        <a href="/cars/create"><button class=" btn btn-primary form-control "><i class="fas fa-plus"></i> তৈরি করুন</button></a>
+        <a href="/users/create"><button class=" btn btn-primary form-control "><i class="fas fa-plus"></i> তৈরি করুন</button></a>
     </div>
 </div>
+
 
 
 <table id="example" class="table table-striped table-bordered " style="width:100%">
     <thead>
         <tr>
             <th>ক্রমিক</th>
-            <th>ধরন</th>
-            <th>নাম্বার</th>
-            <th>চালক</th>
-            <th>ক্রয়ের তারিখ</th>
-            <th>ক্রয় মূল্য</th>
+            <th>নাম</th>
+            <th>ইমেইল</th>
+            <th>উপাধি</th>
             <th class="text-center">অ্যাকশন</th>
-
         </tr>
     </thead>
     <tbody>
         <tr>
-            <td>Zorita Serrano</td>
+            <td>1</td>
             <td>Software Engineer</td>
             <td>San Francisco</td>
             <td>56</td>
-            <td>2012/06/01</td>
-            <td>2012/06/01</td>
             <td class="text-center">
-                <button type="button" class="btn btn-primary btn-sm">Edit</button>
+                <a href="#" class="btn btn-primary btn-sm">Edit</a>
                 <button type="button" class="btn btn-danger btn-sm">Delete</button>
             </td>
         </tr>
@@ -42,11 +38,9 @@
     <tfoot>
         <tr>
             <th>ক্রমিক</th>
-            <th>ধরন</th>
-            <th>নাম্বার</th>
-            <th>চালক</th>
-            <th>ক্রয়ের তারিখ</th>
-            <th>ক্রয় মূল্য</th>
+            <th>নাম</th>
+            <th>ইমেইল</th>
+            <th>উপাধি</th>
             <th class="text-center">অ্যাকশন</th>
         </tr>
     </tfoot>

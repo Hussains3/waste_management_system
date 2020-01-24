@@ -4,7 +4,7 @@
 
 
 @section('content')
-    <h2 class="text-center mb-5">আবর্জনা</h2>
+    <h2 class="text-center mb-5">বর্জ্য</h2>
 
     <form action="">
         @csrf
@@ -22,7 +22,7 @@
                 </div>
             </div>
             <div class="col-lg-6 col-sm-12">
-                {{Form::label('waste_type_id', 'আবর্জনার ধরন')}}
+                {{Form::label('waste_type_id', 'বর্জ্যের ধরন')}}
 
                 <div class="input-group mb-3">
                     {{Form::select('waste_type_id', array( '1'=> 'পরিশোধনযোগ্য', '2' => 'অপরিশোধনযোগ্য '), 'পরিশোধনযোগ্য',array('class' => 'form-control', 'required'  ))}}&nbsp;

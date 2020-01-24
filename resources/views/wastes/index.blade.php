@@ -3,10 +3,10 @@
 @section('content')
 <div class="row mb-2">
     <div class="col-lg-12 col-sm-12 text-center">
-        <h2 class="">আবর্জনা সংগ্রহ</h2>
+        <h2 class="">বর্জ্য সংগ্রহ</h2>
     </div>
     <div class="col-lg-12 col-sm-12 d-flex justify-content-end">
-        <a href="/wastes/create"><button class=" btn btn-primary form-control "><i class="fas fa-plus"></i> Add New</button></a>
+        <a href="/wastes/create"><button class=" btn btn-primary form-control "><i class="fas fa-plus"></i> তৈরি করুন</button></a>
     </div>
 </div>
 <table id="example" class="table table-striped table-bordered" style="width:100%">

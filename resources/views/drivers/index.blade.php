@@ -6,7 +6,7 @@
         <h2 class="">চালকগন</h2>
     </div>
     <div class="col-lg-12 col-sm-12 d-flex justify-content-end">
-        <a href="/drivers/create"><button class=" btn btn-primary form-control "><i class="fas fa-plus"></i> Add New</button></a>
+        <a href="/drivers/create"><button class=" btn btn-primary form-control "><i class="fas fa-plus"></i> তৈরি করুন</button></a>
     </div>
 </div>
 
@@ -97,14 +97,14 @@
 
 @section('scripts')
     <script>
-          $(document).ready(function() {
-    var table = $('#example').DataTable( {
-        rowReorder: {
-            selector: 'td:nth-child(2)'
-        },
-        responsive: true
-    } );
-} );
+        $(document).ready(function() {
+            var table = $('#example').DataTable( {
+                rowReorder: {
+                    selector: 'td:nth-child(2)'
+                },
+                responsive: true
+            } );
+        } );
     </script>
 
 @endsection

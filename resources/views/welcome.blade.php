@@ -7,8 +7,8 @@
     <div class="row mb-5">
         <div class="col-lg-3">
             <a href="trips/create">
-                <div class="card mb-2 card-button" style="">
-                    <span class="mx-auto" style="font-size:5rem;">
+                <div class="card mb-2 card-button bg-primary" style="">
+                    <span class="mx-auto" style="font-size:4rem;">
                         <i class="fas fa-truck card-img-top"></i>
                     </span>
                     {{-- <img class="card-img-top" src=".../100px180/?text=Image cap" alt="Card image cap"> --}}
@@ -17,10 +17,10 @@
             </a>
         </div>
         <div class="col-lg-3">
-            <a href="trips/index">
-                <div class="card mb-2 card-button" style="">
-                    <span class="mx-auto" style="font-size:5rem;">
-                        <i class="fas fa-truck-moving"></i>
+            <a href="trips">
+                <div class="card mb-2 card-button bg-primary" style="">
+                    <span class="mx-auto" style="font-size:4rem;">
+                        <i class="fas fa-clipboard-list"></i>
                     </span>
                     {{-- <img class="card-img-top" src=".../100px180/?text=Image cap" alt="Card image cap"> --}}
                     <h5 class="card-title text-center">ট্রিপের তালিকা</h5>
@@ -29,8 +29,8 @@
         </div>
         <div class="col-lg-3">
             <a href="drivers/create">
-                <div class="card mb-2 card-button" style="">
-                    <span class="mx-auto" style="font-size:5rem;">
+                <div class="card mb-2 card-button bg-primary" style="">
+                    <span class="mx-auto" style="font-size:4rem;">
                         <i class="fas fa-user-friends"></i>
                     </span>
                     {{-- <img class="card-img-top" src=".../100px180/?text=Image cap" alt="Card image cap"> --}}
@@ -40,8 +40,8 @@
         </div>
         <div class="col-lg-3">
             <a href="wastes/create">
-                <div class="card mb-2 card-button" style="">
-                    <span class="mx-auto" style="font-size:5rem;">
+                <div class="card mb-2 card-button bg-primary" style="">
+                    <span class="mx-auto" style="font-size:4rem;">
                         <i class="fas fa-archive"></i>
                     </span>
                     {{-- <img class="card-img-top" src=".../100px180/?text=Image cap" alt="Card image cap"> --}}
